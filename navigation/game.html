@@ -89,7 +89,7 @@ images:
     toggleCanvasEffect.addEventListener("click", function () {
         for (var gameObj of GameObject.gameObjectArray){
             if (gameObj.invert && isFilterEnabled) {  // toggle off
-                gameObj.canvas.style.filter = "none";  // remove filter
+                gameObj.canvas.style.filter = "invert(100%)";  // remove filter
             } else if (gameObj.invert) { // toggle on
                 gameObj.canvas.style.filter = defaultFilter;  // remove filter
             } else {
